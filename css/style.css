@@ -15,21 +15,19 @@
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #00aeff;
   line-height: 48px;
   display: inline;
 }
 
 h2 {
-  font-weight: bold;
   font-size: 24px;
-  color: #999999;
-  line-height: 29px;
-  padding: 10px;
+  color: #00608c;
+  line-height: 1em;
+  padding: 0 10px;
 }
 
 h3 {
-  font-style: italic;
   font-size: 20px;
   color: #000000;
   line-height: 22px;
@@ -43,23 +41,23 @@ h4 {
 }
 
 h2, h3, h4, h5 {
-  padding:10px;
   padding-left: 5%;
   padding-right: 5%;
 }
 
+.no-padding {
+  padding:0 !important;
+}
 
 .date-text {
-  font-style: italic;
-  font-size: 14px;
+  font-size: 13px;
   color: #999999;
   line-height: 16px;
   float: left;
 }
 
 .location-text {
-  font-style: italic;
-  font-size: 14px;
+  font-size: 13px;
   color: #999999;
   line-height: 16px;
   float: right;
@@ -67,7 +65,8 @@ h2, h3, h4, h5 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 400;
   color: #333333;
   line-height: 21px;
 }
@@ -80,49 +79,80 @@ a {
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #F3F3F3;
-  line-height: 28px;
+  font-size: 15px;
+  color: #fff;
+  line-height: 30px;
 }
 
 #skillsH3 {
-  color: #F5AE23;
+  color: #00aeff;
   display: none;
 }
 
-.orange {
-  background-color: #F5AE23;
+.blue {
+  background-color: #00aeff;
+}
+
+.dark {
+  background-color: #1f1f1f;
+}
+
+.dark-blue {
+  color: #00608c;
 }
 
 .orange-text {
-  color: #F5AE23;
+  color: #00aeff;
 }
 
 .white-text {
-  font-weight: bold;
-  color: #FFFFFF;
+  color: #fff;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-black {
+  color: #1f1f1f;
 }
 
 .gray {
-  background-color: #F3F3F3;
-  padding-bottom: 10px;
+  background-color: #fff;
+  padding: 20px 0;
   clear:both;
+  border-bottom: 1px solid #f1eee8;
 }
 
 .dark-gray {
-  background-color: #4A4A4A;
+  background-color: #404040;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background: rgba(82,80,75,1);
+  background: -moz-linear-gradient(top, rgba(82,80,75,1) 0%, rgba(26,23,15,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(82,80,75,1)), color-stop(100%, rgba(26,23,15,1)));
+  background: -webkit-linear-gradient(top, rgba(82,80,75,1) 0%, rgba(26,23,15,1) 100%);
+  background: -o-linear-gradient(top, rgba(82,80,75,1) 0%, rgba(26,23,15,1) 100%);
+  background: -ms-linear-gradient(top, rgba(82,80,75,1) 0%, rgba(26,23,15,1) 100%);
+  background: linear-gradient(to bottom, rgba(82,80,75,1) 0%, rgba(26,23,15,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52504b', endColorstr='#1a170f', GradientType=0 );
 }
 
 .flex-box {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.flex-box-skills {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
@@ -141,13 +171,24 @@ ul {
 
 .biopic {
   float: left;
-  padding: 10px;
+  padding: 10px 20px 10px 0;
   width: 200px;
   display: none;
 }
 
 img {
   padding: 10px;
+}
+
+#footerContacts {
+  background-color: #1f1f1f;
+  padding: 20px 0;
+  clear:both;
+  border-bottom: 1px solid #f1eee8;
+}
+
+.map-padding {
+  padding-bottom: 15px;
 }
 
 /* Bar chart stuff */
@@ -163,11 +204,16 @@ img {
 }
 
 span {
+  font-size: 13px;
   padding: 5px;
 }
 
 #letsConnect {
   text-align: center;
+}
+
+.connect-padding {
+  padding: 20px 0;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -204,7 +250,9 @@ span {
 #mapDiv {
   height: 400px;
   width: 100%;
-  padding-bottom: 5%;
+  margin: 0 0 56px 0;
+  padding: 20px 0;
+  overflow: visible;
 }
 
 @media only screen and (min-width: 750px) {
