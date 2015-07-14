@@ -1,7 +1,3 @@
-
-// Javascript Object Notation (JSON)
-
-// MY OBJECTS
 // BIO
 var bio = {
 	"name": "Jonathan Graham",
@@ -105,7 +101,6 @@ var projects = {
 		}
 	]
 };
-
 // END OF MY OBJECTS
 
 // HEADER display
@@ -224,8 +219,7 @@ education.display = function() {
 };
 education.display();
 
-// MAP please
-
+// MAP 
 $("#mapDiv").append(googleMap);
 initializeMap();
 
