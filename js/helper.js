@@ -1,12 +1,8 @@
 /*
-
 This file contains all of the code running in the background that makes resumeBuilder.js possible. We call these helper functions because they support your code in this course.
-
 Don't worry, you'll learn what's going on in this file throughout the course. You won't need to make any changes to it until you start experimenting with inserting a Google Map in Problem Set 3.
-
 Cameron Pittman
 */
-
 
 /*
 These are HTML strings. As part of the course, you'll be using JavaScript functions
@@ -93,7 +89,7 @@ See the documentation below for more details.
 https://developers.google.com/maps/documentation/javascript/reference
 */
 
-var map;    // declares a global map variable
+var map; // declares a global map variable
 
 /*
 Start here! initializeMap() is called when page is loaded.
@@ -110,7 +106,6 @@ function initializeMap() {
   // This next line makes `map` a new Google Map JavaScript Object and attaches it to
   // <div id="map">, which is appended as part of an exercise late in the course.
   map = new google.maps.Map(document.querySelector('#map'), mapOptions);
-
 
   /*
   locationFinder() returns an array of every location string from the JSONs
@@ -168,7 +163,7 @@ function initializeMap() {
 
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
-      infowindow.open(map, marker);
+      infoWindow.open(map, marker);
     });
 
     // this is where the pin actually gets added to the map.
